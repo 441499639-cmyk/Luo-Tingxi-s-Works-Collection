@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luo Tingxi's Works Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html">Luo Tingxi's Works Collection</a>
+            </div>
+            <div class="navbar-links">
+                <a href="index.html" class="active">HOME</a>
+                <a href="#works">WORKS</a>
+                <a href="#about">ABOUT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页标题区 -->
+    <header class="hero">
+        <div class="container">
+            <h1>tingxiluo</h1>
+            <p>Professional Commercial Photographer</p>
+            <p class="description">专注于服装时尚、静物产品、人像塑造、活动纪实四大核心板块，为客户提供专业、高质量的影像解决方案。</p>
+        </div>
+    </header>
+
+    <!-- 作品集区域 -->
+    <section id="works" class="works">
+        <div class="container">
+            <h2>PORTFOLIO</h2>
+            <div class="works-grid">
+                <!-- 作品卡片 1 -->
+                <div class="work-card" data-id="2">
+                    <div class="work-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=modern%20fashion%20commercial%20photography%20studio%20lighting&image_size=landscape_4_3" alt="Fashion Photography">
+                    </div>
+                    <div class="work-info">
+                        <h3>Fashion Collection</h3>
+                        <p class="work-category">Fashion Photography</p>
+                    </div>
+                </div>
+                <!-- 作品卡片 2 -->
+                <div class="work-card" data-id="1">
+                    <div class="work-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20commercial%20product%20photography%20with%20clean%20background&image_size=landscape_4_3" alt="Product Photography">
+                    </div>
+                    <div class="work-info">
+                        <h3>Product Series</h3>
+                        <p class="work-category">Product Photography</p>
+                    </div>
+                </div>
+                <!-- 作品卡片 3 -->
+                <div class="work-card" data-id="3">
+                    <div class="work-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=corporate%20business%20headshot%20professional%20photography&image_size=landscape_4_3" alt="Corporate Photography">
+                    </div>
+                    <div class="work-info">
+                        <h3>Corporate Portraits</h3>
+                        <p class="work-category">Portrait Photography</p>
+                    </div>
+                </div>
+                <!-- 作品卡片 4 -->
+                <div class="work-card" data-id="4">
+                    <div class="work-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20event%20photography%20documentary%20style%20capturing%20moments&image_size=landscape_4_3" alt="Event Documentary Photography">
+                    </div>
+                    <div class="work-info">
+                        <h3>Event Documentary</h3>
+                        <p class="work-category">Event Photography</p>
+                    </div>
+                </div>
+                <!-- 作品卡片 5 -->
+                <div class="work-card" data-id="5">
+                    <div class="work-image">
+                        <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=creative%20AI%20generated%20photography%20artistic%20concepts&image_size=landscape_4_3" alt="AI Photography Collection">
+                    </div>
+                    <div class="work-info">
+                        <h3>AI Works Collection</h3>
+                        <p class="work-category">AI Generated</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我区域 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>ABOUT ME</h2>
+            <div class="about-content">
+                <p>我是一名专业商业摄影师，主要专注于服装时尚、静物产品、人像塑造、活动纪实四大核心板块。凭借多年的行业经验，我擅长通过镜头捕捉品牌的核心价值和视觉美感。</p>
+                <p>我的摄影风格融合了极简主义和现代美学，注重光线、构图和细节的完美呈现，为客户提供高质量、具有商业价值的影像作品。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部联系方式 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Contact: 441499639@qq.com</p>
+                <p>© 2026 Luo Tingxi's Works Collection</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 作品详情页模态框 -->
+    <div class="modal" id="workModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="Project Detail">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p class="modal-category" id="modalCategory"></p>
+                    <div class="modal-description">
+                        <h3>项目介绍</h3>
+                        <p id="modalDescription"></p>
+                    </div>
+                    <div class="modal-concept">
+                        <h3>设计理念</h3>
+                        <p id="modalConcept"></p>
+                    </div>
+                    <div class="modal-date">
+                        <h3>完成时间</h3>
+                        <p id="modalDate"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
