@@ -54,12 +54,12 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 3rem;
-    flex-wrap: nowrap;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .navbar-brand a {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
     font-weight: 700;
     color: var(--black);
     text-decoration: none;
@@ -75,11 +75,11 @@ body {
 
 .navbar-links {
     display: flex;
-    gap: 3rem;
+    gap: clamp(1rem, 3vw, 3rem);
 }
 
 .navbar-links a {
-    font-size: 1.1rem;
+    font-size: clamp(0.9rem, 1.5vw, 1.1rem);
     font-weight: 700;
     color: var(--black);
     text-decoration: none;
@@ -182,7 +182,6 @@ body {
     color: var(--gray-dark);
     animation: fadeIn 1s ease-in-out 0.4s both;
     line-height: 1.8;
-    white-space: nowrap;
 }
 
 /* 作品集区域 */
@@ -202,8 +201,8 @@ body {
 
 .works-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: clamp(2rem, 4vw, 3rem);
 }
 
 .work-card {
@@ -353,9 +352,9 @@ body {
 
 .modal-content {
     background-color: var(--white);
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
-    margin: 3rem auto;
+    margin: 1rem auto;
     position: relative;
     animation: fadeIn 0.3s ease-in-out;
     border-radius: 12px;
@@ -364,15 +363,15 @@ body {
 
 .close {
     position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    font-size: 2.5rem;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
     cursor: pointer;
     color: var(--black);
     transition: var(--transition);
     z-index: 10;
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     display: flex;
     align-items: center;
     justify-content: center;
